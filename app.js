@@ -20,16 +20,24 @@ function createElement(element, fileName, className, elementId) {
   }
 }
 
-const elementObj = {
-  elementName: "div",
-  fileName: "contact",
-  className: "contact-content",
-  elementId: "myElementId",
+//Create a nav
+const navElement = {
+  elementName: "nav",
+  fileName: "nav",
+  className: "nav",
+  elementId: "nav",
 };
-
 createElement(
-  elementObj.elementName,
-  elementObj.fileName,
-  elementObj.className,
-  elementObj.elementId
+  navElement.elementName,
+  navElement.fileName,
+  navElement.className,
+  navElement.elementId
 );
+//create a main
+const main = {
+  elementName: "main",
+  fileName: "mainContent",
+  className: "main",
+  elementId: "",
+};
+createElement(main.elementName, main.fileName, main.className, main.elementId);

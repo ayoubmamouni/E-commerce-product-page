@@ -1,0 +1,283 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.nav .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #7c8592;
+}
+.nav .nav-content .brand-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.nav .nav-content .brand-menu .brandName {
+  color: #1d2025;
+  margin-right: 40px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.nav .nav-content .brand-menu ul {
+  display: flex;
+  align-items: center;
+}
+.nav .nav-content .brand-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+.nav .nav-content .brand-menu ul li a {
+  text-decoration: none;
+  color: #68707d;
+}
+.nav .nav-content .brand-menu ul li a:hover {
+  text-decoration: none;
+  transition: 300ms;
+  color: #ff7d1a;
+}
+.nav .cart-avatar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nav .cart-avatar .cart-card {
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  background: white;
+  box-shadow: 0 0 20px 0 #b6bcc8;
+  border-radius: 5px;
+  width: 270px;
+}
+.nav .cart-avatar .cart-card .cart-title {
+  padding: 10px 5px;
+  border-bottom: 1px solid #68707d;
+}
+.nav .cart-avatar .cart-card .cart-title h1 {
+  font-size: 20px;
+}
+.nav .cart-avatar .cart-card .cart-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.nav .cart-avatar .cart-card .cart-content .items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.nav .cart-avatar .cart-card .cart-content .items .cart-img img {
+  width: 40px;
+  border-radius: 3px;
+}
+.nav .cart-avatar .cart-card .cart-content .items .cart-items {
+  line-height: 1.5;
+}
+.nav .cart-avatar .cart-card .cart-content .items .cart-items .des {
+  color: #68707d;
+  font-size: 13px;
+}
+.nav .cart-avatar .cart-card .cart-content .items .cart-items .qtty-prices {
+  font-size: 13px;
+  color: #68707d;
+}
+.nav .cart-avatar .cart-card .cart-content .items .cart-items .qtty-prices .total {
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  margin-left: 10px;
+}
+.nav .cart-avatar .cart-card .cart-content .items .trash {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.nav .cart-avatar .cart-card .cart-content .items .trash img {
+  width: 17px;
+}
+.nav .cart-avatar .cart-card .cart-content button {
+  margin-top: 20px;
+  padding: 8px 15px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ff7d1a;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  color: white;
+}
+.nav .cart-avatar .cart-card .cart-content button:active {
+  position: relative;
+  top: 1px;
+}
+.nav .cart-avatar .nav-icon {
+  cursor: pointer;
+}
+.nav .cart-avatar .cart-icon {
+  position: relative;
+}
+.nav .cart-avatar .cart-icon .items-cart-num {
+  border-radius: 10px;
+  color: white;
+  background-color: #ff7d1a;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+}
+.nav .cart-avatar .avatar {
+  width: 50px;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+.nav .cart-avatar .avatar:hover {
+  border: 2px solid #ff7d1a;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-content {
+  display: flex;
+  width: 80%;
+}
+main .main-content .images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-content .images .main-img img {
+  width: 350px;
+  border-radius: 10px;
+}
+main .main-content .images .img-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  width: 350px;
+}
+main .main-content .images .img-list img {
+  width: 80px;
+  border-radius: 10px;
+}
+main .main-content .images .img-list img.active {
+  opacity: 0.5;
+  border: 2px solid #e22817;
+}
+main .main-content .main-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+main .main-content .main-info .details {
+  max-width: 450px;
+}
+main .main-content .main-info .details #company-name {
+  color: #ff7d1a;
+  text-transform: uppercase;
+}
+main .main-content .main-info .details .main-title {
+  font-size: 40px;
+  margin: 20px 0;
+}
+main .main-content .main-info .details p.text-content {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 450px;
+}
+main .main-content .main-info .details .prices {
+  margin-bottom: 20px;
+}
+main .main-content .main-info .details .prices .new-price {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+main .main-content .main-info .details .prices .new-price .sale {
+  margin-left: 20px;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #ff7d1a;
+  background-color: #ffede0;
+}
+main .main-content .main-info .details .prices .old-price {
+  font-size: 15px;
+  margin-top: 5px;
+  text-decoration: line-through;
+  color: #b6bcc8;
+}
+main .main-content .main-info .details .qtty {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .main-content .main-info .details .qtty .counting {
+  flex: 1;
+  background-color: #f7f8fd;
+  border-radius: 5px;
+  padding: 13px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .main-content .main-info .details .qtty .counting #minus,
+main .main-content .main-info .details .qtty .counting #plus {
+  color: #ff7d1a;
+  cursor: pointer;
+  user-select: none;
+}
+main .main-content .main-info .details .qtty .add-to-cart {
+  flex: 2;
+  background-color: #ff7d1a;
+  border: 0;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0px 1px 5px 0px #ff7d1a;
+  cursor: pointer;
+}
+main .main-content .main-info .details .qtty .add-to-cart:active {
+  position: relative;
+  top: 1px;
+}
+main .main-content .main-info .details .qtty .add-to-cart img {
+  margin-right: 15px;
+  width: 20px;
+}
+
+body {
+  background-color: white;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */

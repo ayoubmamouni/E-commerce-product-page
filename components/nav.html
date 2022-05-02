@@ -16,27 +16,27 @@
                 <h1>Cart</h1>
             </div>
             <div class="cart-content">
-                <div class="items">
+                <p class="empty-txt">Your card is empty.</p>
+                <div class="items cartItems">
                     <div class="cart-img">
                         <img src="../images/image-product-1-thumbnail.jpg" alt="">
                     </div>
                     <div class="cart-items">
-                        <p class="empty-cart-txt" style="display: none;">Your cart is empty.</p>
-                        <p class="des">Fall Limited Edition Sneakers</p>
-                        <p class="qtty-prices">$125.00 x 3 <span class="total">$375.00</span></p>
+                            <p class="des">Fall Limited Edition Sneakers</p>
+                            <p class="qtty-prices">$125.00 x <span id="numberOfqtty">0</span> <span class="total">$0</span></p>
                     </div>
                     <div class="trash">
                         <img src="../images/icon-delete.svg" alt="">
                     </div>
                 </div>
-                <button>
+                <button id="checkoutBtn">
                     Checkout
                 </button>
             </div>
         </div>
         <div class="cart-icon">
             <img class="nav-icon cart-icon-img" src="../images/icon-cart.svg" alt="">
-            <div class="items-cart-num">3</div>
+            <div class="notificationCartNumber">0</div>
         </div>
         <img class="nav-icon avatar" src="../images/image-avatar.png" alt="">
     </div>

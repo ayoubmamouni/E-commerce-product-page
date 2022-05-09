@@ -1,0 +1,86 @@
+.desktopSlider {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.73);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  &.show {
+    display: block;
+  }
+  .desktopSlider-content {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .close {
+      font-weight: bold;
+      font-size: 50px;
+      user-select: none;
+      width: 450px;
+      display: flex;
+      justify-content: flex-end;
+      span {
+        cursor: pointer;
+        color: rgb(249, 58, 58);
+      }
+    }
+    .desktopSlider-mainImage {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .desktopSlider-btn {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 100%;
+        display: grid;
+        place-items: center;
+        font-size: 35px;
+        font-weight: bold;
+        background-color: $White;
+        color: black;
+        position: absolute;
+        user-select: none;
+        transition: 200ms;
+        &:active {
+          transform: scale(0.8);
+        }
+        &.prv {
+          left: -25px;
+        }
+        &.nxt {
+          right: -25px;
+        }
+      }
+      img {
+        width: 450px;
+        object-fit: contain;
+        border-radius: 15px;
+      }
+    }
+
+    .desktopSlider-ListImages {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      img {
+        width: 80px;
+        object-fit: contain;
+        border-radius: 15px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: 250ms;
+        &:hover {
+          filter: sepia(5);
+        }
+        &.effect {
+          filter: sepia(10);
+        }
+      }
+    }
+  }
+}

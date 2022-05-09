@@ -45,6 +45,7 @@ export const cart = () => {
     numberOfqtty.innerText = c;
     total.innerText = `$${totalPrice}.00`;
     cartCard.classList.add("showCart");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
   trash.addEventListener("click", () => {
     c = 0;

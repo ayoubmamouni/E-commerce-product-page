@@ -41,3 +41,16 @@ const main = {
   elementId: "",
 };
 createElement(main.elementName, main.fileName, main.className, main.elementId);
+
+const desktopSlider = {
+  elementName: "div",
+  fileName: "desktopSlider",
+  className: "desktopSlider",
+  elementId: "desktopSlider",
+};
+createElement(
+  desktopSlider.elementName,
+  desktopSlider.fileName,
+  desktopSlider.className,
+  desktopSlider.elementId
+);

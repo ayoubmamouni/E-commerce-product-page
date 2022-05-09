@@ -1,0 +1,110 @@
+@media screen and (max-width: 992px) {
+  .nav {
+    padding: 20px;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: $LightGrayishBlue;
+    .nav-content {
+      width: 95%;
+      padding-bottom: 0;
+      border-bottom: 0 !important;
+      .brand-menu {
+        .brandName {
+          font-size: 30px;
+        }
+        ul {
+          display: none !important;
+        }
+      }
+    }
+
+    .cart-avatar {
+      .cart-icon {
+        img {
+          width: 20px !important;
+        }
+      }
+      .avatar {
+        width: 30px !important;
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .main-content {
+    flex-direction: column;
+    width: 100% !important;
+    .images {
+      display: none !important;
+    }
+
+    .mobile-slider {
+      display: block !important;
+      width: 100%;
+      .mobile-images {
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 450px;
+        .mobile-sliderbtn {
+          background-color: red;
+          aspect-ratio: 1/1;
+          width: 40px;
+          border-radius: 100%;
+          display: grid;
+          place-items: center;
+          font-size: 25px;
+          font-weight: bold;
+          background-color: $White;
+          color: black;
+          position: absolute;
+          user-select: none;
+          transition: 200ms;
+          &:active {
+            transform: scale(0.8);
+          }
+          &-prev {
+            left: 5px;
+          }
+          &-next {
+            right: 5px;
+          }
+        }
+        .mobile-slider-img {
+          img {
+            width: 100%;
+            max-width: 450px;
+          }
+        }
+      }
+    }
+
+    .main-info {
+      padding: 20px;
+      margin-bottom: 1rem;
+      .main-title {
+        font-size: 25px !important;
+      }
+      .text-content {
+        font-size: 13px !important;
+      }
+
+      .prices {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .qtty {
+        flex-direction: column;
+        .counting,
+        .add-to-cart {
+          width: 100% !important;
+        }
+        // .add-to-cart{
+        // }
+      }
+    }
+  }
+}

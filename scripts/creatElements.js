@@ -54,3 +54,15 @@ createElement(
   desktopSlider.className,
   desktopSlider.elementId
 );
+const footer = {
+  elementName: "footer",
+  fileName: "footer",
+  className: "footer",
+  elementId: "footer",
+};
+createElement(
+  footer.elementName,
+  footer.fileName,
+  footer.className,
+  footer.elementId
+);

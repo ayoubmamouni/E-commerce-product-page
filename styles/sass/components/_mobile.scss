@@ -1,21 +1,54 @@
 @media screen and (max-width: 992px) {
   .nav {
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 20px;
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 999;
     background-color: $LightGrayishBlue;
     .nav-content {
       width: 95%;
       padding-bottom: 0;
       border-bottom: 0 !important;
       .brand-menu {
-        .brandName {
-          font-size: 30px;
+        display: flex;
+        align-items: center;
+        .menu {
+          display: block;
+          img {
+            margin-right: 10px;
+            width: 20px;
+          }
         }
-        ul {
-          display: none !important;
+        .brandName {
+          font-size: 25px;
+        }
+        ul.menu-list-items {
+          z-index: 999;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          height: 100vh;
+          width: 60%;
+          background-color: $LightGrayishBlue;
+          transform: translateX(-100%);
+          transition: 230ms;
+          .close-menu-mobile {
+            margin-bottom: 35px;
+            display: block;
+            img {
+              width: 15px;
+            }
+          }
+          li {
+            margin-top: 20px;
+          }
+
+          &.show {
+            transform: translateX(0);
+          }
         }
       }
     }
@@ -28,7 +61,7 @@
       }
       .avatar {
         width: 30px !important;
-        margin-left: 30px;
+        margin-left: 20px;
       }
     }
   }
@@ -38,6 +71,22 @@
     width: 100% !important;
     .images {
       display: none !important;
+    }
+
+    .mobile-menu-overlay {
+      background: black;
+      opacity: 75%;
+      width: 40%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 999;
+      display: none;
+      &.show {
+        display: block;
+      }
     }
 
     .mobile-slider {

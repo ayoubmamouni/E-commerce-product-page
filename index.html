@@ -10,9 +10,139 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/css/main.css">
-    <script defer type="module" src="app.js"></script>
+    <script defer src="app.js"></script>
 </head>
 <body>
-  <div id="app"></div> 
+    <nav class="nav">
+        <div class="nav-content"> 
+
+          <div class="brand-menu">
+              <div class="menu">
+                  <img src="../images/icon-menu.svg" alt="">
+              </div>
+              <h1 class="brandName">sneakers</h1>
+              <ul class="menu-list-items">
+                  <li class="close-menu-mobile"><img src="../images/icon-close.svg" alt=""></li>
+                  <li><a href="#">Collections</a></li>
+                  <li><a href="#">Men</a></li>
+                  <li><a href="#">Women</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          
+          <div class="cart-avatar">
+              <div class="cart-card">
+                  <div class="cart-title">
+                      <h1>Cart</h1>
+                  </div>
+                  <div class="cart-content">
+                      <p class="empty-txt">Your card is empty.</p>
+                      <div class="items cartItems">
+                          <div class="cart-img">
+                              <img src="../images/image-product-1-thumbnail.jpg" alt="">
+                          </div>
+                          <div class="cart-items">
+                                  <p class="des">Fall Limited Edition Sneakers</p>
+                                  <p class="qtty-prices">$125.00 x <span id="numberOfqtty">0</span> <span class="total">$0</span></p>
+                          </div>
+                          <div class="trash">
+                              <img src="../images/icon-delete.svg" alt="">
+                          </div>
+                      </div>
+                      <button id="checkoutBtn">
+                          Checkout
+                      </button>
+                  </div>
+              </div>
+              <div class="cart-icon">
+                  <img class="nav-icon cart-icon-img" src="../images/icon-cart.svg" alt="">
+                  <div class="notificationCartNumber">0</div>
+              </div>
+              <img class="nav-icon avatar" src="../images/image-avatar.png" alt="">
+          </div>
+      </div>
+    </nav>
+  <main>
+    <div class="main-content">
+      <div class="mobile-menu-overlay"></div>
+      <div class="mobile-slider">
+          <div class="mobile-images">
+              <div class="mobile-sliderbtn mobile-sliderbtn-prev">&lt;</div>
+              <div class="mobile-slider-img">
+                  <img src="../images/image-product-1.jpg" alt="">
+              </div>
+              <div class="mobile-sliderbtn mobile-sliderbtn-next">&gt;</div>
+          </div>
+      </div> 
+      
+      <div class="images">
+          <div class="main-img">
+              <img src="../images/image-product-1.jpg" alt="">
+          </div>
+          <div class="img-list">
+              <img class="home-thumb-img active" src="../images/image-product-1.jpg" alt="">
+              <img class="home-thumb-img" src="../images/image-product-2.jpg" alt="">
+              <img class="home-thumb-img" src="../images/image-product-3.jpg" alt="">
+              <img class="home-thumb-img" src="../images/image-product-4.jpg" alt="">
+          </div>
+      </div>
+  
+      <div class="main-info">
+          <div class="details">
+              <b id="company-name">Sneaker Company</b>
+              <h1 class="main-title">Fall Limited Edition Sneakers</h1>
+              <p class="text-content">
+                  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                  durable rubber outer sole, they’ll withstand everything the weather can offer.
+              </p>
+  
+              <div class="prices">
+                  <h1 class="new-price">$125.00  <span class="sale">50%</span></h1>
+                  <h1 class="old-price">$250.00</h1>
+              </div>
+  
+              <div class="qtty">
+                  <div class="counting">
+                      <span id="minus">-</span>
+                      <span id="counter">0</span>
+                      <span id="plus">+</span>
+                  </div>
+                  <button class="add-to-cart">
+                      <img src="../images/icon-cart.svg" alt="">
+                      Add to cart
+                  </button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </main>
+    <div class="desktopSlider">
+      <div class="desktopSlider-content">
+
+        <div class="close">
+            <span>
+                &times;
+            </span>
+        </div>
+    
+        <div class="desktopSlider-mainImage">
+            <div class="desktopSlider-btn prv">‹</div>
+                <img src="../images/image-product-1.jpg" alt="">
+            <div class="desktopSlider-btn nxt">›</div>
+        </div>
+        <div class="desktopSlider-ListImages">
+            <img class="desktopSlider-miniImg effect" data-item="1" src="../images/image-product-1-thumbnail.jpg" alt="">
+            <img class="desktopSlider-miniImg " data-item="2" src="../images/image-product-2-thumbnail.jpg" alt="">
+            <img class="desktopSlider-miniImg " data-item="3" src="../images/image-product-3-thumbnail.jpg" alt="">
+            <img class="desktopSlider-miniImg " data-item="4" src="../images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <footer>
+      Challenge by <a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6" target="_blank">Frontend Mentor</a>. 
+      <br/>
+      Coded by <a href="https://ayoubmamouni.com/" target="_blank">Ayoub Mamouni</a>.
+    </footer>
 </body>
 </html>
